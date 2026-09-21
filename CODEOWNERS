@@ -1,0 +1,51 @@
+# Fallback, if no other rule matches
+* @xFrednet
+
+# Admin files
+/.gitattributes @xFrednet
+/CODEOWNERS @xFrednet
+/.gitignore @xFrednet
+/README.md @xFrednet
+/.github @xFrednet
+
+# Files owned by the menu team
+/words.csv @uu-semp/2026-menu-team
+/scripts/save.js @uu-semp/2026-menu-team
+/scripts/SAVE.MD @uu-semp/2026-menu-team
+/scripts/save_test.html @uu-semp/2026-menu-team
+/index.css @uu-semp/2026-menu-team
+/index.html @uu-semp/2026-menu-team
+/index.js @uu-semp/2026-menu-team
+/style.css @uu-semp/2026-menu-team
+/assets/main_menu @uu-semp/2026-menu-team
+
+# Game Teams:
+
+/game02/ @uu-semp/2026-game02
+/assets/game02/ @uu-semp/2026-game02
+/game03/ @uu-semp/2026-game03
+/assets/game03/ @uu-semp/2026-game03
+/game04/ @uu-semp/2026-game04
+/assets/game04/ @uu-semp/2026-game04
+/game05/ @uu-semp/2026-game05
+/assets/game05/ @uu-semp/2026-game05
+/game06/ @uu-semp/2026-game06
+/assets/game06/ @uu-semp/2026-game06
+/game07/ @uu-semp/2026-game07
+/assets/game07/ @uu-semp/2026-game07
+/game08/ @uu-semp/2026-game08
+/assets/game08/ @uu-semp/2026-game08
+/game09/ @uu-semp/2026-game09
+/assets/game09/ @uu-semp/2026-game09
+/game10/ @uu-semp/2026-game10
+/assets/game10/ @uu-semp/2026-game10
+/game11/ @uu-semp/2026-game11
+/assets/game11/ @uu-semp/2026-game11
+/game12/ @uu-semp/2026-game12
+/assets/game12/ @uu-semp/2026-game12
+/game13/ @uu-semp/2026-game13
+/assets/game13/ @uu-semp/2026-game13
+/game14/ @uu-semp/2026-game14
+/assets/game14/ @uu-semp/2026-game14
+/game15/ @uu-semp/2026-game15
+/assets/game15/ @uu-semp/2026-game15

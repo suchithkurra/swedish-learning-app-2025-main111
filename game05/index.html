@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Red Room</title>
+  <link rel="stylesheet" href="styles/main_menu.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <script src="../scripts/vocabulary.js"></script>
+  <script src="../scripts/save.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="js/main_menu.js" defer></script>
+</head>
+<body>
+<main class="game-frame">
+  <div id="start-screen" class="start-screen">
+    <img src="assets/logo.svg" alt="Red Room" width="300px">
+    <div id="progress-indicator"></div>
+    <div class="menu">
+      <button class="menu-btn" id="btn-start"><i class="fa-solid fa-play"></i> Start Game</button>
+      <button class="menu-btn" id="btn-continue"><i class="fa-solid fa-forward"></i> Continue</button>
+      <button class="menu-btn" id="btn-intro"><i class="fa-solid fa-info-circle"></i> Introduction</button>
+      <button class="menu-btn" id="btn-help"><i class="fa-solid fa-question-circle"></i> Help</button>
+
+      <div class="button-group">
+        <button class="menu-btn" id="btn-credits"><i class="fa-solid fa-scroll"></i> Credits</button>
+        <button class="menu-btn" id="btn-clear-data"><i class="fa-solid fa-trash"></i> Clear Data</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="levels-menu" class="hidden start-screen">
+    <h2 class="game-title">Select Difficulty</h2>
+    <div class="menu">
+      <button class="menu-btn" onclick="location.href='main_menu/levels_easy.html'">Easy</button>
+      <button class="menu-btn" onclick="location.href='main_menu/levels_medium.html'">Medium</button>
+      <button class="menu-btn" onclick="location.href='main_menu/levels_hard.html'">Hard</button>
+    </div>
+    <button id="btn-back-to-menu" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back</button>
+  </div>
+
+  <div id="generic-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="modal-title" class="game-title" style="font-size: 36px;"></h2>
+      <div id="modal-body"></div>
+      <button id="modal-close" class="close-btn">Close</button>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <small>Created as part of the "Software Engineering and Project Management" course 2025</small>
+</footer>
+</body>
+</html>

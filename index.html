@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<!--
+=================================================
+Owned by the Menu Team
+=================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>UU-Games</title>
+        <link rel="stylesheet" href="style.css" />
+
+        <script src="./scripts/vocabulary.js"></script>
+        <script src="./scripts/save.js"></script>
+
+        <!-- You are allowed to use JQuery and Vue.js but don't have to. They just make a
+  lot of things easier
+  -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+        <!-- Site specific scripts and styles -->
+        <link rel="stylesheet" href="index.css" />
+        <script src="index.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <div>
+                 <button 
+                    class="header-btn" 
+                    id="lang-eng" 
+                    onclick="setLanguage('en')" 
+                    lang="en"
+                >English</button>
+                <button 
+                    class="header-btn" 
+                    id="lang-sv" 
+                    onclick="setLanguage('sv')"
+                    lang="sv"
+                >Svenska</button>
+                <!-- <button class="header-btn">About</button> --> <!-- Non functioning button: Can be used in the future to add an about page -->
+                <button class="header-btn translate" id="settings-btn"></button>
+            </div>
+        </header>
+        <main>
+            <!-- Game menu -->
+            <section id="game-menu" hidden>
+                <div class="menu-bar">
+                    <div id="intro-text">
+                        <h1 class="translate" id="intro-title"></h1>
+                        <p class="translate" id="intro-desc"></p>
+                    </div>
+                    <div id="filter-bar" class="filter-bar">
+                    </div>
+                </div>
+                <div class="grid" id="game-grid"></div>
+            </section>
+
+            <!-- Game stage -->
+             <section id="game-stage" hidden>
+                <div class="stage-header">
+                    <h1>Game Title</h1>
+                    <button class="translate" id="back-btn"></button>
+                </div>
+                <div class ="game-container">
+                    <iframe id="game-frame" class="game-frame" src="" title="Selected game" scrolling="no"></iframe>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <small class="translate" id="footer-text"></small>
+        </footer>
+    </body>
+</html>
